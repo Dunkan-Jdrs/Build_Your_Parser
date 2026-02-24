@@ -1,7 +1,15 @@
-#pragma once
 #include "Common.h"
-
 #pragma region TOKEN
+
+TEST(Stage1_Token, Empty)
+{
+	/*Init*/
+	const std::string optionName = "";
+
+	/*Verify*/
+	EXPECT_THROW(Token(optionName, {}), std::runtime_error);
+}
+
 TEST(Stage1_Token, IsSubcommand)
 {
 	/*Init*/
@@ -71,7 +79,7 @@ TEST(Stage1_Token, ShortOptionNameTrimmed)
 TEST(Stage1_Token, LongOptionNameTrimmed)
 {
 	/*Init*/
-	Token tokenOption = Token("-message", {});
+	Token tokenOption = Token("--message", {});
 
 	/*Execute*/
 
