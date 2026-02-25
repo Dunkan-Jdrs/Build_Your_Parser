@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+   stage1:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v4
+       - name: Configure
+         run: cmake -S . -B build
+       - name: Build
+         run: cmake --build build
+       - name: Stage 1
+         run: ctest --test-dir build -R "^Stage1_" --output-on-failure
