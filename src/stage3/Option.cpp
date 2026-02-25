@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 /*
-* Stage 2 : Option
+* Stage 3 : Option
 * 
 * An Option describes an accepted option for a Subcommand.
 * It has a short name (ex: "v"), a long name (ex: "verbose"),
