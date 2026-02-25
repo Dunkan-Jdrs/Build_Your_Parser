@@ -23,7 +23,7 @@ Token::Token(const std::string& name, const std::vector<std::string>& arguments)
 			Then you should register both name and arguments in m_name & m_arguments :
 				- name needs to be stripped of its dashes ( ex: name = --verbose, m_name = verbose)
 	*/
-	throw std::exception(__FUNCTION__ " not implemented");
+	throw std::logic_error(__FUNCTION__ " not implemented");
 }
 
 const std::string& Token::GetName() const
@@ -32,7 +32,7 @@ const std::string& Token::GetName() const
 		Return the token's name
 		Reminder: token's name shouldn't contain any dash (-)
 	*/
-	throw std::exception(__FUNCTION__ " not implemented");
+	throw std::logic_error(__FUNCTION__ " not implemented");
 }
 
 const std::vector<std::string>& Token::GetArguments() const
@@ -40,7 +40,7 @@ const std::vector<std::string>& Token::GetArguments() const
 	/*
 		Return the token's arguments list
 	*/
-	throw std::exception(__FUNCTION__ " not implemented");
+	throw std::logic_error(__FUNCTION__ " not implemented");
 }
 
 TokenType Token::GetType() const
@@ -48,5 +48,5 @@ TokenType Token::GetType() const
 	/*
 		Return the token's type
 	*/
-	throw std::exception(__FUNCTION__ " not implemented");
+	throw std::logic_error(__FUNCTION__ " not implemented");
 }

@@ -14,9 +14,13 @@ Context::Context(ValuesMap&& values)
 {
 	/*
 	This constructor has a rvalue parameter. Why?
-	The ContextBuilder will locally create a ValuesMap which is an unordered_map. 
-	But after building the Context, the builder will be destroyed so we can't pass the ValuesMap as a reference.
-	Indeed, we can give it as a value, but to avoid a copy of the map, we may pass it as a rvalue which means that we move the object responsibility to this class.
+	
+	The ContextBuilder will locally create a ValuesMap, in the "Build" function, which is an unordered_map. 
+	But after building the Context, at the end of the scope, the local map will be destroyed so we can't pass the ValuesMap as a reference.
+	
+	Indeed, we can give it as a value, but to avoid a copy of the map, we can pass it as a rvalue 
+	which means that we move the object responsibility to this class.
+
 	So the ValuesMap is now dependent on the Context life cycle.
 	*/
     throw std::logic_error(__FUNCTION__ " not implemented");
