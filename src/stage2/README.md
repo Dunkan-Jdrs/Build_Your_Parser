@@ -5,6 +5,7 @@ Parser is a system which transforms the command line arguments into a list of [T
 A command line is given through the entry point of your application by 2 parameters:
 - `argc`: It is an `int` which means "arguments count", this is the number of arguments in the command line.
 - `argv`: this is a `const char**`, you don't have to worry about the `*` for now, just know that it is a list of word and you can get each elements using argv\[i]. Note that argv\[0] is the executable path and should be ignored
+
 ## What to implement?
 
 In this second stage you will have to implement a single function:
@@ -20,5 +21,5 @@ You don't have to throw anything for the Parser.
 ## Resources
 
 For this stage you may look at:
-- [std::vector](https://cplusplus.com/reference/vector/vector/)
-- [argc & argv](https://en.cppreference.com/w/cpp/language/main_function.html)
+- [`std::vector`](https://cplusplus.com/reference/vector/vector/)
+- [`argc` &  `argv`](https://en.cppreference.com/w/cpp/language/main_function.html)
