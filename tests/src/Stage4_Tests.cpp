@@ -126,7 +126,7 @@ TEST(Stage4_App, RunSubcommandWithOption)
 		currentValue = count;
 		});
 
-	foo.AddOption(countOptionShortName, countOptionLongName, 1);
+	foo.AddOption(Option(countOptionShortName, countOptionLongName, 1));
 	app.AddSubcommand(foo);
 
 	/*Execute*/

@@ -49,17 +49,6 @@ void Subcommand::AddOption(const Option& option)
     throw std::logic_error(__FUNCTION__ " not implemented");
 }
 
-void Subcommand::AddOption(const std::string& shortName, const std::string& longName, const int arity)
-{
-	/*
-		Create and add option with both short and long name.
-		Use the vector to store the objects, use the map to reference them.
-		
-		Tip: you may look at emplace_back method of vector.
-	*/
-    throw std::logic_error(__FUNCTION__ " not implemented");
-}
-
 bool Subcommand::HasRegisteredOption(const std::string& name) const
 {
 	/*
