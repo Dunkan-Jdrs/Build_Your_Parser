@@ -37,7 +37,7 @@ You have to handle the following one:
 - Throw runtime error if given name contains more than 2 dashes
 
 ## Resources
----
+
 For this stage you may look at:
-[`std::string::find_first_not_of`](https://cplusplus.com/reference/string/string/find_first_not_of/)
-[`std::runtime_error`](https://cplusplus.com/reference/stdexcept/runtime_error/)
+- [`std::string::find_first_not_of`](https://cplusplus.com/reference/string/string/find_first_not_of/)
+- [`std::runtime_error`](https://cplusplus.com/reference/stdexcept/runtime_error/)
