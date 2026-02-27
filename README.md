@@ -1,14 +1,13 @@
 # Build your own CLI_Parser !
---- 
+
 ## Presentation
----
+
 This is **a guided project** where you learn how to create a CLI_Parser from **scratch** using C++ and STL. Through 5 stages you will learn how to structure a project, separate responsibilities and discover multiples concepts like `argc & argv handling`, `move semantics`, `builder pattern` 
 
 ## Why doing this project
---- 
+
 In addition to the concepts that you will learn, you will have a project to put in your portfolio and a reusable project for any application. Moreover this project is an entry point to bigger projects such as a Git-like.
 ## Stages
---- 
 
 | Stage                                                                                 | What you implement                                                                                                                                                                 | Key concept                                                |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -19,9 +18,8 @@ In addition to the concepts that you will learn, you will have a project to put 
 | [App](src/stage5/App.md)                                                              | Expose a high-level API that developers use to declare commands/options, parse `argv`, and execute handlers.                                                                       | API design, orchestration, architecture                    |
 
 ## Getting started
---- 
+
 ### Create repository
---- 
 On this project you can find at the top-right a button `Use this template`, use it and create your own repository.
 
 #### Steps
